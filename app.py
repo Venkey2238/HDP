@@ -12,7 +12,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS users (username TEXT, password TEXT
 conn.commit()
 
 # loading the saved models
-heart_disease_model = pickle.load(open(r'C:\Users\MRCET\Downloads\heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open(r'heart_disease_model.sav','rb'))
 # sidebar for navigation
 with st.sidebar:
     selected = option_menu('Heart Disease Prediction System',
